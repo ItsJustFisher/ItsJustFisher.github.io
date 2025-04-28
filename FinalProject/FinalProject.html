@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Project: Natural Disasters in The US</title>
+        <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+
+        <style>
+            body {
+                font-family: sans-serif;
+                line-height: 1.6;
+                margin: 20px;
+                color: #333;
+                background-color: #f4f4f4;
+            }
+    
+            h1, h2, h3 {
+                color: #2c3e50;
+            }
+    
+            h1 {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+    
+            h2 {
+                text-align: center;
+                color: #777;
+                margin-bottom: 15px;
+                font-style: italic;
+            }
+    
+            h3 {
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 5px;
+                margin-top: 25px;
+            }
+    
+            p {
+                margin-bottom: 1em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Final Project: Natural Disasters in The US</h1>
+        <h2>April 28, 2025</h2>
+        <h2>Alan Fisher Branltey</h2>
+
+        <h3>Introduction</h3>
+        <p>It should be known that the United States is common for many typesof  natural disasters to 
+            occur. This is something to consider when it comes to becomming a future resident or even 
+            looking for a places to travel. These visuals should provide an over view to show what 
+            natural where natural disasters are likely to occur in the United States.
+        </p>
+
+        <p>The information was pulled from <a href=
+            https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2>fema.gov</a>. The
+            data is from 1953 to present with information about natural disasters in the United
+            States. 
+        </p>
+
+        <h3>Disasters by Year and State</h3>
+        <p>The visual shown below is a interactive visual that can take in a year(s) filter input,
+            selected state(s) filter input or a selected natual disaster filter input. The visuals will 
+            change depending on the filters applied, altering the colors or size of the graphs. If no 
+            filter is applied to the graphs, they are going to show all years, states and natural disasters
+            that have taken place. If you wish to select more than one item in either the graph or map be
+            sure to CTRL + LClick each item and for different years just select each one on the top right.
+        </p>
+
+        <p>
+            These graphs are intended to show where most natural disasters have occured in each state,
+            as well as the disasters caused in certain states and the disasters that occur within certain 
+            years.
+        </p>
+
+        <p>
+            It may be pretty easy that to notice on the graphs that California and Texas are really 
+            saturated with red. This is due to the amount of wild fires that have had occured for over the 
+            years in these two states. These environments are prone to being dry so it has some sense of 
+            being this way. This is further supported if we select the 'Fire', with no other filters active, 
+            column in the graph to show that places in the west are common for these natural disasters. 
+        </p>
+        
+        <p>
+            If we wish to look at some of the more recent (past 5) years, we can see that California has 
+            the most natural disasters in the US. Most of the natural disasters that have occured in the 
+            US appears to be Fires with 307 incidents and most of which are shown to occur in California.
+        </p>
+
+        <p>    
+            Lastly, we can select a state such as South Carolina, with no other filters active, to show that
+            hurricanes occur the most in this state with a number of 16 incidents. If we continue to select 
+            a few more states in the East Coast such as Georgia, North Carolina, and Virginia, the natural 
+            disasters begin to shift in the graph showing severe storms becoming the highest occured with 
+            a count of 49 and 42 incidents of hurricanes being second highest.
+        </p>
+
+        <p>
+            The point of these graphs are to show specific trends between areas and their climates such fires
+            being more common in the West Coast, hurricanes in eastern US, and the Mid-West often experiencing
+            severe storms. Playing around with the values shall show certain trends with natural disasters in
+            the United States.
+        </p>
+
+
+        <div class='tableauPlaceholder' id='viz1745824260975' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Interactive Natural Disaster Map ' src='https:&#47;&#47;
+                    public.tableau.com&#47;static&#47;images&#47;Di&#47;DisastersbyStateandYear&#47;
+                    InteractiveNaturalDisasterMap&#47;1_rss.png' style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz'  style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='DisastersbyStateandYear&#47;InteractiveNaturalDisasterMap' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;
+                images&#47;Di&#47;DisastersbyStateandYear&#47;InteractiveNaturalDisasterMap&#47;1.png' /> 
+                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /><param name='language' value='en-US' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1745824260975');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if ( divElement.offsetWidth > 800 ) { 
+                vizElement.style.width='1000px';
+                vizElement.style.height='827px';
+            } else if ( divElement.offsetWidth > 500 ) { 
+                vizElement.style.width='1000px';
+                vizElement.style.height='827px';
+            } else { 
+                vizElement.style.width='100%';
+                vizElement.style.height='827px';
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+
+        <h3>Disasters by Year and State</h3>
+        <p>This heat map shows the average unique incident per year of each state dating back to 1953. 
+            This map is gives you more of a summarized view of each states history. With each year, some
+            states seem to have more disasters occur than the others despite some of them getting more 
+            disasters on average. Using this map, it can be easier to determine which state is safer from
+            natural disasters on average.
+
+            If we take a look at the map, we can in fact see that certain states like California and Texas 
+            still have a higher average of disasters that occur but something that be unexpected is the 
+            fact that Oklahoma has the overall highest average which is not completely apparent in the 
+            first map above. This shows that these states average disasters more often and potentially 
+            contain more dangerous climates.
+        </p>
+
+
+        <div class='tableauPlaceholder' id='viz1745825811469' style='position: relative'>
+            <noscript><a href='#'>
+                <img alt='Disasters per Year by States ' src='https:&#47;&#47;public.tableau.com&#47;
+                static&#47;images&#47;Di&#47;DisastersperYearbyState&#47;DisastersperYearbyStates&#47;
+                1_rss.png' style='border: none' />
+            </a></noscript>
+            <object class='tableauViz'  style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+                <param name='name' value='DisastersperYearbyState&#47;DisastersperYearbyStates' />
+                <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;
+                images&#47;Di&#47;DisastersperYearbyState&#47;DisastersperYearbyStates&#47;1.png' /> 
+                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>                
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1745825811469');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+
+        <h3>Conclusion</h3>
+        <p>These visuals are able to provide us with information about natural disasters in the US. With the 
+            help of the heat map and graph, we can see that hurricanes mostly common in the East Coast,
+            the West having the most incidents with fires and the Mid-West prone to Severe Storms. The states
+            that appear to have the most occured incidents from 1953 to present are California and Texas.
+            Information about the most recent years, ranging from 2020-2025, has shown that fires are the
+            occured with 307 incidents and California having the most incidents of this natural disaster.
+        </p>
+            
+        <p>
+            If we look back at the second heat map, we can see that Oklahoma has averaged the highest amount
+            of incidents per year. Following in close second would be Texas and then California. This informs
+            us that these states are more common to have incidents of natural disasters to occur making them
+            more potentially hazardous.
+        </p>
+
+    </body>
+</html>
